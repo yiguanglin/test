@@ -1,0 +1,83 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	min-width: 1335px;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/* 
+	定义全局的button背景色
+*/
+/* 拒绝操作 */
+.empty{
+  background-color: rgb(239, 48, 59) !important;
+	color: #fff !important;
+	border: none !important;
+}
+/* 同意操作 */
+.define{
+  background-color: #2ebf91 !important;
+	color: #fff !important;
+}
+.el-button{
+	border: none !important;
+}
+.el-card{
+	/* background-image: url('../image/cont.jpg');
+	background-size: 100% 100%; */
+	background-color: rgb(59,117,95) !important;
+
+}
+.el-dialog__title,.el-drawer__header{
+	font-weight: bold;
+	color: #fff !important;
+}
+
+.el-drawer,.el-dialog{
+	background-color: rgb(59,117,95) !important;
+
+}
+.el-table td.el-table__cell, .el-table th.el-table__cell.is-leaf{
+	text-align: center;
+}
+/* 分割线文字 */
+.el-divider__text{
+	background: #2ebf91 !important;
+	color: #fff !important;   
+
+	font-weight: bold !important;
+}
+.el-form-item__label{
+	color: #fff !important;
+	font-weight: bold !important;
+}
+.el-breadcrumb__inner{
+	color: #fff !important;
+}
+/* 修改输入框样式样式 */
+/* 修改表格样式 */
+.el-input__inner{
+	height: 34px !important;
+	font-weight:normal !important;
+}
+.el-input__inner,.el-table,.el-table th.el-table__cell,.el-table tr{
+	background-color: rgb(59,117,95) !important;
+	color: rgb(242,203,108)  !important;
+	font-weight: bold;
+
+}
+
+
+/*  修改登录页的公共样式 */
+.loginInput .el-form-item__label{
+	color: rgb(218, 20, 89);
+	/* font-weight:bold; */
+	/* font-size: 18px;	 */
+	/* background-color: rgb(95, 246, 254); */
+}
+/* 查看单场比赛的抽屉样式 */
+.rankingListDrawer .el-drawer__body{
+	overflow: hidden;
+	}

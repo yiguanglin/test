@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+        * {
+            margin: 19px;
+            padding: 0;
+        }
+        html {
+            height: 100%;
+            width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background: url(../static/image/ad.jpg) no-repeat 0px 0px;
+            {#background-repeat: no-repeat;#}
+            background-size: 100% 100%;
+            -moz-background-size: 100% 100%;
+        }
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+        #loginDiv {
+            width: 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+            background-color: rgba(75, 81, 95, 0.3);
+            box-shadow: 7px 7px 17px rgba(52, 56, 66, 0.5);
+            border-radius: 250px;
+        }
+        input {
+            margin-left: 100px;
+            border-radius: 15px;
+            border-style: hidden;
+            height: 30px;
+            width: 140px;
+            background-color: rgba(216, 191, 216, 0.5);
+            outline: none;
+            color: #f0edf3;
+            padding-left: 10px;
+        }
+    </style>
+    <style type="text/css">
+        input::-ms-input-placeholder{text-align: center;}
+        input::-webkit-input-placeholder{text-align: center;}
+    </style>
+</head>
+<body>
+      <div id="loginDiv">       
+        <form method="post">
+            <h1 style="text-align: center;color: aliceblue;">选手登入</h1>
+            <p>{{ msg }}</p>
+{#            <input type="text" name="adminname" placeholder="请输入用户名">#}
+            <input type="text" name="password" placeholder="请输入hashcode">
+            <input type="submit" value="登录" style="text-align: center; margin-left: 104px;">
+        </form>
+        
+    </div>
+</body>
+</html>
